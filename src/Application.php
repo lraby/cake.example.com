@@ -56,6 +56,7 @@ class Application extends BaseApplication
         }
 
         // Load more plugins here
+        $this->addPlugin(\CakeDC\Users\Plugin::class);
     }
 
     /**
@@ -110,5 +111,6 @@ class Application extends BaseApplication
         $this->addPlugin('Migrations');
 
         // Load more plugins here
-    }
+        $this->addPlugin(\CakeDC\Users\Plugin::class);
+    }   
 }
